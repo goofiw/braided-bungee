@@ -10,7 +10,8 @@ function initialize() {
       for (var i = 0; i < result.feed.entries.length; i++) {
         var entry = result.feed.entries[i];
         var div = document.createElement("div");
-        div.innerHTML = '<a href=' + entry.link + '>' + entry.contentSnippet + '</a>';
+        div.className = "list-group";
+        div.innerHTML = "<a class='list-group-item' href=" + entry.link + '>' + entry.contentSnippet + '</a>';
         //div.appendChild(document.createTextNode(entry.content));
         container.appendChild(div);
       }

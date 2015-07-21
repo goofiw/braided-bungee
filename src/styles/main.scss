@@ -1,9 +1,9 @@
 body {
-  background-color: #B7D1EC;
+  background-color: #F1F0F0;
 }
 
 div {
-  background-color: #DFF0D8;
+  font-family: Arial, Verdana;
 }
 
 td {
@@ -12,6 +12,10 @@ td {
 
 ul li {
   text-align: left;
+}
+
+img{
+  box-shadow: 10px 10px 5px #888888;
 }
 
 ul.languages li {
@@ -48,9 +52,48 @@ ul.project-list li {
 img.project-image {
   width: 80%;    
   margin: 20px;
-  border-radius: 8px
+  border-radius: 8px;
 }
 
 .jumbotron {
   background-image: url('images/me-on-tusk.jpg') no-repeat center right;
 }
+
+dl.github-projects{
+}
+
+dt.github-project{
+  padding: 1em 0 .25em 0;
+}
+
+dd.github-description{
+  padding: 0 1em 0 1em;
+}
+
+.left-jumbotron{
+  display: inline;
+  float: left;
+}
+
+.about-me{
+  transform: translateY(20%);
+  font-size: 1.25em;
+}
+
+img.my-image{
+  width: 30%;
+  border-radius: 10px;
+  display: inline;
+  float: right;
+}
+
+img.about-me-image {
+  box-shadow: 8px 8px 4px #888888;
+  width: 40%;
+  margin-top: 2em;
+  margin-left: 3em;
+  display: inline-block;
+  float: right;
+  border-radius: 6px;
+}
+
