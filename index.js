@@ -24,7 +24,7 @@ app.use(logger());
 app.use(router(app));
 
 var port = 80;
-if (process.env.NODE_ENV=='environment') {
+if (process.env.NODE_ENV=='development') {
   port = 3000;
 }
 app.listen(port);
