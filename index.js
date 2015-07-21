@@ -29,6 +29,5 @@ var port = 3000;
 if (process.env.NODE_ENV=='production') {
   port = 80;
 }
->>>>>>> bc29eb31adbe9f0c4e7617072fab86b6de737095
 app.listen(port);
 console.log('listening on ', port)
