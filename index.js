@@ -25,6 +25,10 @@ app.use(logger());
 app.use(cors({origin: 'http://ajax.googleapis.com'}))
 app.use(router(app));
 
-var port = 80;
+var port = 3000;
+if (process.env.NODE_ENV=='production') {
+  port = 80;
+}
+>>>>>>> bc29eb31adbe9f0c4e7617072fab86b6de737095
 app.listen(port);
 console.log('listening on ', port)

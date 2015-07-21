@@ -3,15 +3,23 @@ extends ./layout.jade
 block content
   .container
     .jumbotron 
-      h1 Will Chantry 
-      a(href="mailto:goofiw@gmail.com") goofiw@gmail.com | 
-      a(href="https://github.com/goofiw") github | 
-      a(href="https://www.linkedin.com/profile/view?id=207444317&trk=hp-identity-name") LinkedIn
+      .container
+        div.left-jumbotron
+          h1 Will Chantry 
+          div.contact-links
+            a(class='glyphicon glyphicon-envelope' href="mailto:goofiw@gmail.com") &nbsp goofiw@gmail.com <br \> 
+            br
+            a(class='glyphicon glyphicon-cloud' href="https://github.com/goofiw") &nbsp github <br /> 
+            br
+            a(class='glyphicon glyphicon-user' href="https://www.linkedin.com/profile/view?id=207444317&trk=hp-identity-name") &nbsp LinkedIn
+        div.my-photo
+          img.my-image(src='images/me-on-tusk.jpg' alt="me on black tusk")
+
     .row
       .col-md-8 
         h2 A junior full stack developer with a focus on server side javascript looking to apply an engineering education to build real world, real time applications.
       .col-md-4
-        h2.section-header Education
+        h2.section-header.glyphicon.glyphicon-education &nbsp Education
         table.table
           tbody   
             tr 
@@ -25,11 +33,12 @@ block content
     .row
       .col-md-12
         h2 Projects
+        hr
         table.table
           tbody
             dl.dl-horizontal 
               dt Mana-Match Quest
-              dd A real time turn based competitive puzzle game written using Melonjs, Nodejs and the koajs framework. <br />
+              dd A real time turn based competitive puzzle game written using Melonjs, Nodejs and the koajs framework. <br /><br />Sign in with google and choose a team.  As soon as a match is found, the game will begin.  Slide (not swap) crystal rows to make matches.  Matches are translated into attack mana and at the end of your turn your champions will attack the opposing player down to his or her last man.  Keep in mind, depending on the crystal type of the match, your champion with the strongest attack of that type will do the attacking.<br />
                 a(href='htttp://www.manamatch.com') Mana Match | 
                 a(href='https://github.com/EatmoreVanCleef/laughing-octo-adventure') Github
              ul.project-list
@@ -41,8 +50,8 @@ block content
                  img.project-image(src='images/manamatch-team.png' alt='mana-match team')
             dl.dl-horizontal 
               dt OfficeFoos
-              dd Written using the Sinatra Framework, an unimposing system to manage employee memory release and increase overall efficiency in the workplace<br /><br />
-                Implements Ajax polling, Twilio API text messaging, automatic emailing, JQuery, and Bootstrap <br /> 
+              dd Need a break from work?  Sign in, choose or create an office and hit play foos!  The you will be matched with a likeminded coworker and recieve an email or text message notifying you of your match.<br /><br />
+                Written in the Sinatra framework and implements Ajax polling, Twilio API text messaging, automatic emailing, JQuery, and Bootstrap <br /> 
                 a(href='https://www.officefoos.herokuapp.com') OfficeFoos | 
                 a(href='https://github.com/goofiw/acidic-toadstools') Github
               ul.project-list
@@ -52,7 +61,7 @@ block content
                   img.project-image(src='images/officefoos-offices.png' alt='office foos offices')
             dl.dl-horizontal 
               dt Rotten Mangoes
-              dd A movie review website written in rails, with user authentication, admin dashboard, and twitter bootstrap<br />
+              dd A movie review website written in rails, with user authentication, admin dashboard, and twitter bootstrap<br />Go ahead, submit and review a movie you enjoyed (or didn't!). <br />
                 a(href='https://mighty-everglades-5759.herokuapp.com') Rotten Mangoes | 
                 a(href='https://github.com/goofiw/rooftree') Github
               ul.project-list
@@ -60,64 +69,87 @@ block content
                   img.project-image(src='images/rotten-mangoes-index.png' alt='rotten mangoes index')
                 li
                   img.project-image(src='images/rotten-mangoes-review.png' alt='rotten mangoes review')
+
     .row
       h2 On Github
       .col-md-5
         div#github-content
       .col-md-7
-        dl
-          dt
+        dl.github-projects
+          dt.github-project
+            a(href='https//github.com/goofiw/jackblack') BlackJack
+          dd.github-description (In progress)  A blackjack game written using react.js
+          dt.github-project
             a(href='https://github.com/goofiw/web-scraper') Web Crawler
-          dd A web crawler written in NodeJs to recursively search for and list all images on a website.  http://substack.net/images/ used to test.
-          dt
+          dd.github-description A web crawler written in NodeJs to recursively search for and list all images on a website.  http://substack.net/images/ used to test.
+          dt.github-project
             a(href='https://github.com/goofiw/web_scraper_practice') Web Scraper
-          dd A web scraper written in Ruby that logs comments from blogging sites when given different website-specific keys. 
-          dt
+          dd.github-description A web scraper written in Ruby that logs comments from blogging sites when given different website-specific keys. 
+          dt.github-project
             a(href='https://github.com/goofiw/rainy-days') Rainy Days
-          dd Using the Weather Underground API, this simple app takes searches for a nearby weather station, and given a date will tell the user if it rained and how much.
+          dd.github-description Using the Weather Underground API, this simple app takes searches for a nearby weather station, and given a date will tell the user if it rained and how much.
+    .row
+      .col-md-4
+        div
+          div.about-me
+            dl
+              dt
+                h2 About me
+              dd
+                p Always up for a new adventure, be it hopping on a boat to a private island, escorting europeans around Tijuana, or just hopping on my custom road bike for a ‘big K’ ride; I am comfortable being uncomfortable.  Pushing the limits has led me to my tech career path.  I enjoy leveraging my engineering training in it’s purest form of solving problems using new technologies on a daily basis.  I’m also decent at foosball.
+      .col-md-8
+        div.about-me-images
+          img.about-me-image(src='images/star-hill-bike.jpg' alt="bike at star hill brewery")
+          img.about-me-image(src='images/snow-tent.jpg' alt="snow covered tent")
+          img.about-me-image(src='images/horseshoe-bay-bike.jpg' alt="road bike at horseshoe bay")
+          img.about-me-image(src='images/gambier-dock.jpg' alt="Dock at gambier island")
+
     .row
       .col-md-3
         div.languages-frameworks
           h3 Languages & Frameworks
-          ul.languages
-            li Ruby
-            li Javascript
-            li HTML
-            li CSS
-            li C (intro)
-            li Python (intro)
-            li Node.js
-            li koa.js
-            li Ruby on Rails
-            li Sinatra
-            li JQuery
-            li Bootstrap
-            li American English (native)
-            li Spanish (comfortable)
+          div.languages
+            p Ruby
+            p Javascript
+            p HTML
+            p CSS
+            p C (intro)
+            p Python (intro)
+            p Node.js
+            p koa.js
+            p Ruby on Rails
+            p Sinatra
+            p JQuery
+            p Bootstrap
+            p American English (native)
+            p Spanish (comfortable)
       .col-md-9
         h2 Work History
         div.jobs
           div.job 
             h3.job-title Project Engineer
-            h5 Engineering Consulting Services<br/>Charlottesville, Virginia
+            h5 
+              em Engineering Consulting Services<br/>Charlottesville, Virginia
             p.text-right Oct 2013 - Feb 2015
             ul
-              li Consulting for owners and contractors to interpret engineering standards and provide engineered solutions for unforeseen circumstances for clients. 
+              li Consulted for owners and contractors to interpret engineering standards and provide engineered solutions for unforeseen circumstances for clients. 
               li Daily tasks included writing proposals, marketing, and managing as many as 20 projects at any given time.
-              li Review and complete technician field reports to verify specifications were met and procedures were followed
+              li Review and completed technician field reports to verify specifications were met and procedures were followed
           div.job
             h3.job-title General Manager
-            h4 Michaels Bistro and Tap House<br/>Charlottesville, Virginia
+            h4 
+              em Michaels Bistro and Tap House<br/>Charlottesville, Virginia
             p.text-right Aug 2011 - Oct 2013 
             ul
-              li Managing day to day operations of a profitable restaurant and craft beer bar
-              li Handling ordering, hiring, payroll, and scheduling for over 20 employees
+              li Managed day to day operations of a profitable restaurant and craft beer bar
+              li Handled ordering, hiring, payroll, and scheduling for over 20 employees
           div.job
             h3.job-title Pool Manager & Red Cross Certified Swim Lesson Instructor
-            h4 Reston Association <br/> Reston, Virginia
+            h4 
+              em Reston Association <br/> Reston, Virginia
             p.text-right Jul 2003 - Oct 2008
             ul
-              li Conducting red cross refresher raining, scheduling, and operations of a world class swimming pool.
+              li Conducted red cross refresher raining, scheduling, and operations of a world class swimming pool.
               li Held Red Cross Professional CPR/AED, first aid, water safety instructor, and Fairfax County Pool Operators License.
 
 
