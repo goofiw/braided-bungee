@@ -86,6 +86,11 @@ img.my-image {
   float: right;
 }
 
+.about-me-images {
+  padding: 2em 0 2em 0;
+  display: inline-block;
+}
+
 img.about-me-image {
   box-shadow: 8px 8px 4px #888888;
   width: 40%;
