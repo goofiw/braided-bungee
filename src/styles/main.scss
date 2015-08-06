@@ -22,6 +22,10 @@ a:hover {
   text-decoration: none;
 }
 
+a:visited {
+  text-decoration: none;
+}
+
 li.no-bullet {
   list-style-type: none;
 }
@@ -34,6 +38,7 @@ ul.languages li {
 }
 
 .languages-frameworks {
+  margin-top: 20px;
   text-align: center;
   border: 1px solid #B7D1EC;
   border-radius: 15px;
