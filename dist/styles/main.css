@@ -113,3 +113,14 @@ img.about-me-image {
   float: right;
   border-radius: 6px;
 }
+
+ul.hackathons li {
+  list-style: none;
+}
+
+.hackathon-img {
+  width: 60%;
+  display: block;
+  margin: auto;
+  margin-bottom: 2em;
+}

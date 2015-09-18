@@ -24,6 +24,7 @@ app.use(logger());
 app.use(router(app));
 
 var port = 80;
+console.log(process.env.NODE_ENV)
 if (process.env.NODE_ENV=='development') {
   port = 3000;
 }
