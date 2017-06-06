@@ -17,7 +17,7 @@ block content
 
     .row
       .col-md-8 
-        h2 A full stack developer with a focus on server side javascript looking to apply an engineering education to build real world, real time applications.
+        h2 A primarily Frontend developer with a focus on modern javascript frameworks
       .col-md-4
         h2.section-header.glyphicon.glyphicon-education &nbsp Education
         table.table
@@ -31,8 +31,106 @@ block content
               td B.S. in Civil and Environmental Engineering <br />
                 em University of Virginia
     .row
+      .col-md-4
+        div
+          div.about-me
+            dl
+              dt
+                h2 About me
+              dd
+                p I try to keep a balance.  After spending ~7 hours in front of a computer screen, I typically hit the climbing gym or head to a yoga class.  On the weekends, I like to challenge myself with some outdoor climbing, mountaineering, or sometimes just some good PNW microbrews.  Pushing my limits has led me to my tech career path.  I enjoy leveraging my engineering training in its purest form of solving problems using new technologies on a daily basis.  I’m also decent at foosball.
+      .col-md-4
+        div.about-me-images
+          img.about-me-image(src='images/shuksan.jpg' alt="Top of Mt. Shuksan")
+          img.about-me-image(src='images/vantageLead.jpg' alt="leading the 10c on the feathers in vantage")
+      .col-md-4
+        .div.about-me-images
+          img.about-me-image(src='images/itza.jpg' alt="Mt. Itzacuahtla, Mexico")
+          img.about-me-image(src='images/horseshoe-bay-bike.jpg' alt="road bike at horseshoe bay")
+          img.about-me-image(src='images/gambier-dock.jpg' alt="Gambier Island")
+
+    .row
+      .col-md-3
+        div.languages-frameworks
+          h3 Languages & Frameworks
+          div.languages
+          p I've written programs in lots of <i>languages</i>, from <b>C</b> to <b>Scala</b>, to <b>Python</b> and lots in between.
+          p I don't want to bore you with over twice as many <i>frameworks</i> or syntactic sugar abstractions.
+          p Currently I'm a solid <b>Ember</b> developer, with interests in <b>Angular</b> and <b>React</b>.  I deal with a <b>Scalatra + MySql</b> backend on a daily basis as well, and am comfortable picking up most any language and abstraction.
+        div.languages-frameworks
+          h3 Awards
+          div.languages
+            p First Prize at Expedia LocalExpert Seattle Hackathon <a href="https://www.geekwire.com/2016/winner-of-expedias-first-seattle-hackathon-connects-concerts-and-sports-with-travel/">Geekwire Article</a>
+          div.languages
+            p Best Bike safety application at the AT&T Mobile Application and Bicycle Safety Hackathon
+            img.hackathon-img(src='images/att-hack.jpg' alt="bike safety hackathon winners")
+
+      .col-md-9
+        h2 Experience
+          div.jobs
+          div.job
+              h3.job-title Software Engineer 1
+              h5
+                em Expedia LocalExpert<br/>Seattle, Washington
+                p.text-right Mar 2016 -  current
+                ul
+                  li.no-bullet Rapidly filled the role of Senior Frontend Developer for the team responsible for supplier onboarding in the activities line of business.  We use Ember and a propreitary ui-toolkit to produce an input heavy application that allows small and large companies to manage their activity listing on Expedia's website.
+          div.job
+              h3.job-title Web Development Engineer
+              h5
+                em Weblife<br/>Seattle, Washington
+                p.text-right Nov 2015 -  Mar 2016
+                ul
+                  li.no-bullet Vanilla javascript, React js, and Java Spring developer for a web security start up.  Tasks include building and maintaining an Admin portal with role based authentication, displaying user and application metrics, and creating an interactive overlay over server side rendered web pages.
+           div.job
+              h3.job-title Mobile Web Development Engineer
+              h5
+                em Stuffmapper<br/>Seattle, Washington
+                p.text-right Sep 2015 - Jan 2016
+                ul
+                  li.no-bullet Web developer for an environmentally friendly small to large item recycling startup located in Seattle.  Technical stack includes a Ruby on Rails backend API with AngularJs on the frontend.  While there I used Angular Ionic to build out and deploy the Android and IOS mobile applications to compliment the website.
+            div.job
+              h3.job-title Associate
+              h5
+                em StartUp Hall<br/>Seattle, Washington
+                p.text-right Jul 2015 - Dec 2015
+                ul
+                  li.no-bullet General support of a coworking/startup incubator space in Seattle's University District.  Typical duties include greeting members and visitors, connecting and introducing member companies to applicants and new residents, and providing tours of the space for budding startups and community partners.
+            div.job
+              h3.job-title Web Development Course
+              h5
+                em Lighthouse Labs<br/>Vancouver, British Columbia
+                p.text-right Apr 2015 - Jun 2015
+                ul
+                  li.no-bullet A nine week eat, sleep, and breathe programming course in Vancouver, B.C.   Emphasis is on Ruby and JavaScript and corresponding frameworks, but the real emphasis is on the ability to "learn to learn" and best practices.
+            div.job
+              h3.job-title Project Engineer
+              h5
+                em Engineering Consulting Services<br/>Charlottesville, Virginia
+                p.text-right Oct 2013 - Feb 2015
+                ul
+                  li Consulted for owners and contractors to interpret engineering standards and provide engineered solutions for unforeseen circumstances for clients.
+                  li Daily tasks included writing proposals, marketing, and managing as many as 20 projects at any given time.
+                  li Reviewed and completed technician field reports to verify specifications were met and procedures were followed
+            div.job
+              h3.job-title General Manager
+              h5
+                em Michaels Bistro and Tap House<br/>Charlottesville, Virginia
+                p.text-right Aug 2011 - Oct 2013
+                ul
+                  li Managed day-to-day operations of a profitable restaurant and craft beer bar
+                  li Handled ordering, hiring, payroll, and scheduling for over 20 employees
+            div.job
+              h3.job-title Pool Manager & Red Cross Certified Swim Lesson Instructor
+              h5
+                em Reston Association <br/> Reston, Virginia
+                p.text-right Jul 2003 - Oct 2008
+                ul
+                  li Conducted Red Cross refresher training, scheduling, and operations of a world class swimming pool.
+                  li Held Red Cross Professional CPR/AED, first aid, water safety instructor, and Fairfax County Pool Operators License.
+    .row
       .col-md-12
-        h2 Projects
+        h2 Some older projects
         hr
         table.table
           tbody
@@ -92,95 +190,5 @@ block content
           dt.github-project
             a(href='https://github.com/goofiw/rainy-days') Rainy Days
           dd.github-description Using the Weather Underground API, this simple app takes searches for a nearby weather station, and given a date will tell the user if it rained and how much.
-    .row
-      .col-md-4
-        div
-          div.about-me
-            dl
-              dt
-                h2 About me
-              dd
-                p Always up for a new adventure, be it hopping on a boat to a private island, escorting Europeans around Tijuana, or just hopping on my custom road bike for a ‘big K’ ride; I am comfortable being uncomfortable.  Pushing the limits has led me to my tech career path.  I enjoy leveraging my engineering training in its purest form of solving problems using new technologies on a daily basis.  I’m also decent at foosball.
-      .col-md-8
-        div.about-me-images
-          img.about-me-image(src='images/star-hill-bike.jpg' alt="bike at star hill brewery")
-          img.about-me-image(src='images/snow-tent.jpg' alt="snow covered tent")
-          img.about-me-image(src='images/horseshoe-bay-bike.jpg' alt="road bike at horseshoe bay")
-          img.about-me-image(src='images/gambier-dock.jpg' alt="Dock at gambier island")
-
-    .row
-      .col-md-3
-        div.languages-frameworks
-          h3 Languages & Frameworks
-          div.languages
-            p Ruby | Javascript
-            p Angular.js | React.sj | Node.js
-            p HTML | CSS | JQuery
-            p C (intro) | Python (intro)
-            p Express.js | koa.js
-            p Ruby on Rails | Sinatra
-            p American English (native) | Spanish (comfortable)
-        div.languages-frameworks
-          h3 Awards 
-          div.languages
-            p Best Bike safety application at the AT&T Mobile Application and Bicycle Safety Hackathon
-            img.hackathon-img(src='images/att-hack.jpg' alt="bike safety hackathon winners")
-
-      .col-md-9
-        h2 Experience
-          div.jobs
-          div.job
-              h3.job-title Web Development Engineer
-              h5
-                em Weblife<br/>Seattle, Washington
-                p.text-right Nov 2015 - Current 
-                ul
-                  li.no-bullet Vanilla javascript, React js, and Java Spring developer for a web security start up.  Tasks include building and maintaining an Admin portal with role based authentication, displaying user and application metrics, and creating an interactive overlay over server side rendered web pages. 
-           div.job
-              h3.job-title Web Development Engineer
-              h5
-                em Stuffmapper<br/>Seattle, Washington
-                p.text-right Sep 2015 - Current 
-                ul
-                  li.no-bullet Web developer for an environmentally friendly small to large item recycling startup located in Seattle.  Technical stack includes a Ruby on Rails backend API with AngularJs on the frontend.
-            div.job
-              h3.job-title Associate
-              h5
-                em StartUp Hall<br/>Seattle, Washington
-                p.text-right Jul 2015 - Dec 2015 
-                ul
-                  li.no-bullet General support of a coworking/startup incubator space in Seattle's University District.  Typical duties include greeting members and visitors, connecting and introducing member companies to applicants and new residents, and providing tours of the space for budding startups and community partners.
-            div.job
-              h3.job-title Web Development Course
-              h5
-                em Lighthouse Labs<br/>Vancouver, British Columbia
-                p.text-right Apr 2015 - Jun 2015
-                ul
-                  li.no-bullet A nine week eat, sleep, and breathe programming course in Vancouver, B.C.   Emphasis is on Ruby and JavaScript and corresponding frameworks, but the real emphasis is on the ability to "learn to learn" and best practices.
-            div.job
-              h3.job-title Project Engineer
-              h5 
-                em Engineering Consulting Services<br/>Charlottesville, Virginia
-                p.text-right Oct 2013 - Feb 2015
-                ul
-                  li Consulted for owners and contractors to interpret engineering standards and provide engineered solutions for unforeseen circumstances for clients. 
-                  li Daily tasks included writing proposals, marketing, and managing as many as 20 projects at any given time.
-                  li Reviewed and completed technician field reports to verify specifications were met and procedures were followed
-            div.job
-              h3.job-title General Manager
-              h5 
-                em Michaels Bistro and Tap House<br/>Charlottesville, Virginia
-                p.text-right Aug 2011 - Oct 2013 
-                ul
-                  li Managed day-to-day operations of a profitable restaurant and craft beer bar
-                  li Handled ordering, hiring, payroll, and scheduling for over 20 employees
-            div.job
-              h3.job-title Pool Manager & Red Cross Certified Swim Lesson Instructor
-              h5 
-                em Reston Association <br/> Reston, Virginia
-                p.text-right Jul 2003 - Oct 2008
-                ul
-                  li Conducted Red Cross refresher training, scheduling, and operations of a world class swimming pool.
-                  li Held Red Cross Professional CPR/AED, first aid, water safety instructor, and Fairfax County Pool Operators License.
 
 
